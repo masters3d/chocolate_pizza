@@ -53,5 +53,31 @@
   display: inline-block;
   box-sizing: border-box;
   margin: 0 4em 0 2em;
-
 }
+
+hr.lastSeparator {
+  margin-top: 40px;
+}
+hr.lastSeparator::after {
+  content: url(../images/small-logo.png);
+  /* Controls the position of the logo */
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  /* Controls the whitespace around the symbol */
+  padding: 20px;
+  background: #fff;
+}
+
+  hr.thickSeparator {
+   height: 10px;
+   /*background pattern generated http://enjoycss.com/code/*/
+   background: linear-gradient(-45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), linear-gradient(45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(140,140,140,0) 25%, rgba(255,255,255,0) 100%), linear-gradient(-45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%), linear-gradient(45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), rgb(255, 255, 255);
+   background-size: 2.3px 2.3px;
+ }
+
+ p.copyright {
+   margin-top: 40px;
+   text-align: center;
+   color: #acb0b7;
+ }
