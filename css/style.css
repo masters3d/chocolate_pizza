@@ -1,0 +1,13 @@
+* {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+}
+
+.row::after {
+  clear:both;
+}
