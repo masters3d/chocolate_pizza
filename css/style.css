@@ -2,6 +2,11 @@
   font-family: 'Helvetica', sans-serif;
 }
 
+.tree {
+  max-width: 80%;
+  padding: 5em;
+}
+
 .row::before,
 .row::after {
   content: "";
@@ -10,4 +15,23 @@
 
 .row::after {
   clear:both;
+}
+
+.blank {
+  position: relative;
+  background-image: url("../images/list-bg.png");
+  margin: 10px;
+}
+
+.paper {
+margin: 1em;
+}
+
+.lists {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.list_text {
+  display: inline-block;
 }
