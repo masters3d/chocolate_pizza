@@ -1,10 +1,15 @@
 * {
+  /*border: 3px solid black;*/
   font-family: 'Helvetica', sans-serif;
 }
 
-.tree {
-  max-width: 80%;
-  padding: 5em;
+.wrapper {
+  max-width: 1120px;
+  padding: 2em;
+}
+
+.row * {
+  max-width: 100%;
 }
 
 .row::before,
@@ -17,21 +22,36 @@
   clear:both;
 }
 
+.pizza {
+  max-width: 90.5%;
+  margin: 30px;
+}
+
 .blank {
   position: relative;
   background-image: url("../images/list-bg.png");
-  margin: 10px;
+  margin: 30px;
+  max-width: 90.5%;
 }
 
+.pgraphs {
+  max-width: 90.5%;
+  margin: 30px;
+}
+
+
 .paper {
-margin: 1em;
+  margin: 1em;
 }
 
 .lists {
-  display: inline-block;
+  display: inline;
   margin: 0 auto;
 }
 
 .list_text {
   display: inline-block;
+  box-sizing: border-box;
+  margin: 0 4em 0 2em;
+
 }
