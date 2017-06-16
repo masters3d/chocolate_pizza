@@ -11,3 +11,18 @@
 .row::after {
   clear:both;
 }
+
+hr.lastSeparator {
+  /*background:url(../images/small-logo.png) no-repeat center;
+  height:30px;*/
+}
+hr.lastSeparator::after {
+  content: url(../images/small-logo.png);
+  /* Controls the position of the logo */
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  /* Controls the whitespace around the symbol */
+  padding: 20px;
+  background: #fff;
+}
