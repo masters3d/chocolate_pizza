@@ -86,8 +86,16 @@ hr.lastSeparator::after {
    float: right;
  }
 
+ .strike {
+   text-decoration: line-through;
+ }
+
  p.copyright {
    margin-top: 40px;
    text-align: center;
    color: #acb0b7;
  }
+
+.print{
+  float: right;
+}
