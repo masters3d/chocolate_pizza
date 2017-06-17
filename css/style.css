@@ -21,6 +21,21 @@
 .row::after {
   clear:both;
 }
+.second_soc {
+  margin-left: 80%;
+    display: inline;
+
+}
+
+.first_soc {
+  margin-left: 57%;
+  display: inline;
+}
+
+.center {
+  max-width: 88%;
+  padding-left: 1em;
+}
 
 .pizza {
   max-width: 90.5%;
@@ -55,6 +70,11 @@
   margin: 0 4em 0 2em;
 }
 
+.blurb {
+  display: inline;
+  margin-left: 2em;
+}
+
 hr.lastSeparator {
   margin-top: 40px;
 }
@@ -80,8 +100,10 @@ hr.lastSeparator::after {
  }
 
  .redButton {
-   background-color: orange;
-   width: 10%;
+   background-color: red;
+   color: white;
+   width: 100px;
+   height: 50px;
    display: inline-block;
    float: right;
  }
@@ -97,5 +119,6 @@ hr.lastSeparator::after {
  }
 
 .print{
-  float: right;
+  /*float: right;*/
+  margin-left: 50em
 }
