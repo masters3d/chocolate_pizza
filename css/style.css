@@ -4,40 +4,36 @@
 }
 
 div[class=log]{
-  /*max-width: 300px;*/
   width: 300px;
   float: left;
 }
 div[class=socialMedia] {
     float: right;
-    height: 10px;
+    height: 30px;
     margin-top: 37px;
-    width: 400px;
-
+    padding-right: 0px;
+    width: 250px;
 }
 
 .socialMedia img {
-  border: 2px solid red;
+  border: 2px solid white;
   float: left;
 }
 
 .first_soc {
+  margin-left: 14px;
   display: inline-block;
-  margin-left: 120px;
 }
 
 .second_soc {
   display: inline-block;
-  margin-left: 10px;
   margin-right: 0px;
-  width: 80px;
 }
 
 #logo {
   float: left;
   margin-top: 27px;
   margin-right: 10px;
-
 }
 
 #logoText {
@@ -46,14 +42,14 @@ div[class=socialMedia] {
 }
 
 #logoText h1 {
-    margin-top: 12px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-size: 230%;
-    display: inline-block;
-
+  margin-top: 12px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 230%;
+  display: inline-block;
 }
+
 #logoText h5 {
   margin-top: -10px;
   font-size: x-small;
@@ -65,13 +61,17 @@ header {
   max-width: 900px;
   margin: : 0 auto;
 }
-body {
+
+
+/*Matching up the image to be almost pixel perfect*/
+/*body {
     background-image: url("../images/PREVIEW.jpg");
-}
+}*/
 
 main, header, footer {
   margin-left: 162px;
   margin-right: 100px;
+  max-width: 900px;
 }
 
 .row * {
@@ -97,6 +97,7 @@ main, header, footer {
   position: relative;
   background-image: url("../images/list-bg.png");
   background-clip: border-box;
+  border-style: outset;
 }
 
 .pgraphs p {
