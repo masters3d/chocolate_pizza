@@ -1,11 +1,77 @@
 * {
-  /*border: 3px solid black;*/
   font-family: 'Helvetica', sans-serif;
+  font-size: medium;
 }
 
-.wrapper {
-  max-width: 1120px;
-  padding: 2em;
+div[class=log]{
+  /*max-width: 300px;*/
+  width: 300px;
+  float: left;
+}
+div[class=socialMedia] {
+    float: right;
+    height: 10px;
+    margin-top: 37px;
+    width: 400px;
+
+}
+
+.socialMedia img {
+  border: 2px solid red;
+  float: left;
+}
+
+.first_soc {
+  display: inline-block;
+  margin-left: 120px;
+}
+
+.second_soc {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 0px;
+  width: 80px;
+}
+
+#logo {
+  float: left;
+  margin-top: 27px;
+  margin-right: 10px;
+
+}
+
+#logoText {
+  display: inline;
+  height: 40px
+}
+
+#logoText h1 {
+    margin-top: 12px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 230%;
+    display: inline-block;
+
+}
+#logoText h5 {
+  margin-top: -10px;
+  font-size: x-small;
+  color: grey;
+}
+
+header {
+  max-height: 80px;
+  max-width: 900px;
+  margin: : 0 auto;
+}
+body {
+    background-image: url("../images/PREVIEW.jpg");
+}
+
+main, header, footer {
+  margin-left: 162px;
+  margin-right: 100px;
 }
 
 .row * {
@@ -21,39 +87,21 @@
 .row::after {
   clear:both;
 }
-.second_soc {
-  margin-left: 80%;
-    display: inline;
-
-}
-
-.first_soc {
-  margin-left: 57%;
-  display: inline;
-}
-
-.center {
-  max-width: 88%;
-  padding-left: 1em;
-}
 
 .pizza {
-  max-width: 90.5%;
-  margin: 30px;
+  max-width: 100%;
+  display: block;
 }
 
 .blank {
   position: relative;
   background-image: url("../images/list-bg.png");
-  margin: 30px;
-  max-width: 90.5%;
+  background-clip: border-box;
 }
 
-.pgraphs {
-  max-width: 90.5%;
-  margin: 30px;
+.pgraphs p {
+  color: grey;
 }
-
 
 .paper {
   margin: 1em;
@@ -68,6 +116,12 @@
   display: inline-block;
   box-sizing: border-box;
   margin: 0 4em 0 2em;
+}
+
+.list_text * {
+  font-family: 'Handlee', cursive;
+  color: #675D41 ;
+  font-size: large;
 }
 
 .blurb {
@@ -90,6 +144,7 @@ hr.lastSeparator::after {
 }
 
   hr.thickSeparator {
+  clear: both;
    height: 10px;
    /*background pattern generated http://enjoycss.com/code/*/
    background: linear-gradient(-45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), linear-gradient(45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(140,140,140,0) 25%, rgba(255,255,255,0) 100%), linear-gradient(-45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%), linear-gradient(45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), rgb(255, 255, 255);
@@ -100,7 +155,7 @@ hr.lastSeparator::after {
  }
 
  .redButton {
-   background-color: red;
+   background-color: #BA7158;
    color: white;
    width: 100px;
    height: 50px;
@@ -119,6 +174,5 @@ hr.lastSeparator::after {
  }
 
 .print{
-  /*float: right;*/
   margin-left: 50em
 }
