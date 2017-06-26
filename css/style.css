@@ -3,6 +3,16 @@
   font-size: medium;
 }
 
+html, body {
+    height:100%;
+}
+
+body {
+  height: 1970px;
+  background-size: 1240px 1970px;
+  background-repeat: no-repeat;
+}
+
 div[class=log]{
   width: 300px;
   float: left;
