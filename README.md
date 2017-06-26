@@ -1,2 +1,3 @@
 # chocolate_pizza
-pair css project
+
+Project to show case how to create html css from sample static design image
