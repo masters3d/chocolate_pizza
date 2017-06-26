@@ -62,7 +62,6 @@ header {
   margin: : 0 auto;
 }
 
-
 /*Matching up the image to be almost pixel perfect*/
 body {
     background-image: url("../images/PREVIEW.jpg");
@@ -76,6 +75,8 @@ main, header, footer {
 
 section {
   height: 172px;
+  max-height: 172px;
+  margin-left: 0px;
 }
 
 .row * {
@@ -113,10 +114,6 @@ section {
   line-height: 160%;
   text-indent: 30px;
 }
-br {
-  text-indent: 30px;
-
-}
 
 .paper {
   margin: 1em;
@@ -145,8 +142,40 @@ br {
 }
 
 .blurb {
+  display: inline-block;
+  font-size: small;
+  color:gray;
+  margin-top: -30px;
+}
+section {
+  position: relative;
+}
+
+section div h1 {
+  font-size: 250%;
   display: inline;
-  margin-left: 2em;
+  margin-bottom: -20px;
+}
+section div {
+  max-height: 100%;
+  width: 350px;
+  height: 70px;
+  margin-bottom: 0px;
+  display: inline-block;
+  float: left;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.print{
+  float: left;
+  margin-left: 50em;
+  font-size: x-small;
+  color: grey;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 hr.lastSeparator {
@@ -194,7 +223,3 @@ hr.lastSeparator::after {
    text-align: center;
    color: #acb0b7;
  }
-
-.print{
-  margin-left: 50em
-}
