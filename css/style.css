@@ -1,11 +1,77 @@
 * {
-  /*border: 3px solid black;*/
   font-family: 'Helvetica', sans-serif;
+  font-size: medium;
 }
 
-.wrapper {
-  max-width: 1120px;
-  padding: 2em;
+div[class=log]{
+  width: 300px;
+  float: left;
+}
+div[class=socialMedia] {
+    float: right;
+    height: 30px;
+    margin-top: 37px;
+    padding-right: 0px;
+    width: 250px;
+}
+
+.socialMedia img {
+  border: 2px solid white;
+  float: left;
+}
+
+.first_soc {
+  margin-left: 14px;
+  display: inline-block;
+}
+
+.second_soc {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+#logo {
+  float: left;
+  margin-top: 27px;
+  margin-right: 10px;
+}
+
+#logoText {
+  display: inline;
+  height: 40px
+}
+
+#logoText h1 {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 230%;
+  display: inline-block;
+}
+
+#logoText h5 {
+  margin-top: -10px;
+  font-size: x-small;
+  color: grey;
+}
+
+header {
+  max-height: 80px;
+  max-width: 900px;
+  margin: : 0 auto;
+}
+
+main, header, footer {
+  margin-left: 162px;
+  margin-right: 100px;
+  max-width: 900px;
+}
+
+section {
+  height: 172px;
+  max-height: 172px;
+  margin-left: 0px;
 }
 
 .row * {
@@ -21,39 +87,30 @@
 .row::after {
   clear:both;
 }
-.second_soc {
-  margin-left: 80%;
-    display: inline;
-
-}
-
-.first_soc {
-  margin-left: 57%;
-  display: inline;
-}
-
-.center {
-  max-width: 88%;
-  padding-left: 1em;
-}
 
 .pizza {
-  max-width: 90.5%;
-  margin: 30px;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 25px;
 }
 
 .blank {
+  width: 900px;
+  height: 305px;
   position: relative;
   background-image: url("../images/list-bg.png");
-  margin: 30px;
-  max-width: 90.5%;
+  background-clip: border-box;
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 
-.pgraphs {
-  max-width: 90.5%;
-  margin: 30px;
+.pgraphs p {
+  color: grey;
+  font-size: large;
+  line-height: 160%;
+  text-indent: 30px;
+  margin-bottom: 25px;
 }
-
 
 .paper {
   margin: 1em;
@@ -61,22 +118,67 @@
 
 .lists {
   display: inline;
-  margin: 0 auto;
+  margin-top: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .list_text {
   display: inline-block;
   box-sizing: border-box;
-  margin: 0 4em 0 2em;
+  max-width: 48%;
+  max-height: 99%;
+  margin: -2em 4em 0em 2em;
+}
+
+.list_text * {
+  font-family: 'Handlee', cursive;
+  color: #675D41 ;
+  font-size: x-large;
 }
 
 .blurb {
+  display: inline-block;
+  font-size: small;
+  color:gray;
+  margin-top: -30px;
+}
+
+section {
+  position: relative;
+}
+
+section div h1 {
+  font-size: 250%;
   display: inline;
-  margin-left: 2em;
+  margin-bottom: -20px;
+}
+section div {
+  max-height: 100%;
+  width: 350px;
+  height: 70px;
+  margin-bottom: 0px;
+  display: inline-block;
+  float: left;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.print{
+  float: left;
+  margin-left: 50em;
+  font-size: x-small;
+  color: grey;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 hr.lastSeparator {
   margin-top: 40px;
+  clear: both;
 }
 hr.lastSeparator::after {
   content: url(../images/small-logo.png);
@@ -89,23 +191,67 @@ hr.lastSeparator::after {
   background: #fff;
 }
 
-  hr.thickSeparator {
+hr.thickSeparator {
+  clear: both;
    height: 10px;
-   /*background pattern generated http://enjoycss.com/code/*/
-   background: linear-gradient(-45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), linear-gradient(45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(140,140,140,0) 25%, rgba(255,255,255,0) 100%), linear-gradient(-45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%), linear-gradient(45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), rgb(255, 255, 255);
-   background-size: 2.3px 2.3px;
+   /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient*/
+   background-color: gray;
+   background-image: repeating-linear-gradient(45deg, transparent, transparent .5px, rgba(255,255,255,1) 3px, rgba(128,128,128,1) 2px);
+   opacity: .8;
  }
+
  ul {
    list-style-type:none;
  }
 
+.author {
+  margin-bottom: 150px;
+}
+.author h1 {
+   color: #4C4C4C;
+   font-size: x-large;
+ }
+
+.author p {
+  color: gray;
+  font-size: large;
+  line-height: 160%;
+}
+
+.author_description h1 {
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.author_description {
+  display: block;
+  float: left;
+  width: 600px;
+}
+
+.author img {
+  width: 71px;
+  height: 68px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.redButton h4 {
+  font-size: small;
+  text-align: center;
+  display: block;
+  margin-top: 17px;
+}
+
  .redButton {
-   background-color: red;
-   color: white;
-   width: 100px;
-   height: 50px;
-   display: inline-block;
+   margin-top: 16px;
+   display: block;
    float: right;
+   background-color: #BA7158;
+   color: white;
+   width: 180px;
+   height: 50px;
  }
 
  .strike {
@@ -117,8 +263,3 @@ hr.lastSeparator::after {
    text-align: center;
    color: #acb0b7;
  }
-
-.print{
-  /*float: right;*/
-  margin-left: 50em
-}
