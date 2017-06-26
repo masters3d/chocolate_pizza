@@ -22,7 +22,6 @@ function showHide(button){
     rows[2].hidden = '';
     document.body.style.backgroundImage = '';
     button.innerText = 'Showing Matched HTML';
-
     flipped = true;
   }
 };
