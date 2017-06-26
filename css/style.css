@@ -63,9 +63,9 @@ header {
 }
 
 /*Matching up the image to be almost pixel perfect*/
-body {
+/*body {
     background-image: url("../images/PREVIEW.jpg");
-}
+}*/
 
 main, header, footer {
   margin-left: 162px;
@@ -180,6 +180,7 @@ section div {
 
 hr.lastSeparator {
   margin-top: 40px;
+  clear: both;
 }
 hr.lastSeparator::after {
   content: url(../images/small-logo.png);
@@ -192,7 +193,7 @@ hr.lastSeparator::after {
   background: #fff;
 }
 
-  hr.thickSeparator {
+hr.thickSeparator {
   clear: both;
    height: 10px;
    /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient*/
@@ -205,13 +206,54 @@ hr.lastSeparator::after {
    list-style-type:none;
  }
 
+.author {
+  margin-bottom: 150px;
+}
+.author h1 {
+   color: #4C4C4C;
+   font-size: x-large;
+ }
+
+.author p {
+  color: gray;
+}
+
+
+
+.author_description h1 {
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.author_description {
+  display: block;
+  float: left;
+  width: 400px;
+}
+
+.author img {
+  width: 71px;
+  height: 68px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.redButton h4 {
+  font-size: small;
+  text-align: center;
+  display: block;
+  margin-top: 17px;
+}
+
  .redButton {
+   margin-top: 16px;
+   display: block;
+   float: right;
    background-color: #BA7158;
    color: white;
-   width: 100px;
+   width: 180px;
    height: 50px;
-   display: inline-block;
-   float: right;
  }
 
  .strike {
