@@ -1,0 +1,124 @@
+* {
+  /*border: 3px solid black;*/
+  font-family: 'Helvetica', sans-serif;
+}
+
+.wrapper {
+  max-width: 1120px;
+  padding: 2em;
+}
+
+.row * {
+  max-width: 100%;
+}
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+}
+
+.row::after {
+  clear:both;
+}
+.second_soc {
+  margin-left: 80%;
+    display: inline;
+
+}
+
+.first_soc {
+  margin-left: 57%;
+  display: inline;
+}
+
+.center {
+  max-width: 88%;
+  padding-left: 1em;
+}
+
+.pizza {
+  max-width: 90.5%;
+  margin: 30px;
+}
+
+.blank {
+  position: relative;
+  background-image: url("../images/list-bg.png");
+  margin: 30px;
+  max-width: 90.5%;
+}
+
+.pgraphs {
+  max-width: 90.5%;
+  margin: 30px;
+}
+
+
+.paper {
+  margin: 1em;
+}
+
+.lists {
+  display: inline;
+  margin: 0 auto;
+}
+
+.list_text {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 4em 0 2em;
+}
+
+.blurb {
+  display: inline;
+  margin-left: 2em;
+}
+
+hr.lastSeparator {
+  margin-top: 40px;
+}
+hr.lastSeparator::after {
+  content: url(../images/small-logo.png);
+  /* Controls the position of the logo */
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  /* Controls the whitespace around the symbol */
+  padding: 20px;
+  background: #fff;
+}
+
+  hr.thickSeparator {
+   height: 10px;
+   /*background pattern generated http://enjoycss.com/code/*/
+   background: linear-gradient(-45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), linear-gradient(45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(140,140,140,0) 25%, rgba(255,255,255,0) 100%), linear-gradient(-45deg, rgb(140,140,140) 0, rgb(140,140,140) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%), linear-gradient(45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(140,140,140) 75%, rgb(140,140,140) 100%), rgb(255, 255, 255);
+   background-size: 2.3px 2.3px;
+ }
+ ul {
+   list-style-type:none;
+ }
+
+ .redButton {
+   background-color: red;
+   color: white;
+   width: 100px;
+   height: 50px;
+   display: inline-block;
+   float: right;
+ }
+
+ .strike {
+   text-decoration: line-through;
+ }
+
+ p.copyright {
+   margin-top: 40px;
+   text-align: center;
+   color: #acb0b7;
+ }
+
+.print{
+  /*float: right;*/
+  margin-left: 50em
+}
